@@ -1,0 +1,72 @@
+{
+  "_why": "Homepage category tiles and solids swatches, captured from the live site. The component is yd-store's; the destinations are browse pages and the artwork existed only on the live site.",
+  "tiles": [
+    {
+      "label": "Tanks & Shorts",
+      "href": "/tanks-and-shorts",
+      "images": [
+        "/brand/home/mob-tanks-shorts.jpg",
+        "/brand/home/tanks-shorts.jpg"
+      ]
+    },
+    {
+      "label": "Capris",
+      "href": "/capris",
+      "images": [
+        "/brand/home/mob-capris.jpg",
+        "/brand/home/capris.jpg"
+      ]
+    },
+    {
+      "label": "Pockets",
+      "href": "/bottoms-with-pockets",
+      "images": [
+        "/brand/home/mob-pockets.jpg",
+        "/brand/home/pockets.jpg"
+      ]
+    },
+    {
+      "label": "Bells & Flares",
+      "href": "/bells-and-flares",
+      "images": [
+        "/brand/home/bells-flares.jpg",
+        "/brand/home/mob-bells-flares.jpg"
+      ]
+    },
+    {
+      "label": "Clover",
+      "href": "/solids/clover",
+      "images": [
+        "/brand/home/yd-2026homepage-solidsswatches-01.jpg"
+      ]
+    },
+    {
+      "label": "Burnt Orange",
+      "href": "/solids/burnt-orange",
+      "images": [
+        "/brand/home/yd-2026homepage-solidsswatches-02.jpg"
+      ]
+    },
+    {
+      "label": "Jet Black",
+      "href": "/solids/jet-black",
+      "images": [
+        "/brand/home/yd-2026homepage-solidsswatches-03.jpg"
+      ]
+    },
+    {
+      "label": "Spring Grove",
+      "href": "/solids/spring-grove",
+      "images": [
+        "/brand/home/yd-2026homepage-solidsswatches-04.jpg"
+      ]
+    },
+    {
+      "label": "Sage Green",
+      "href": "/solids/sage-green",
+      "images": [
+        "/brand/home/yd-2026homepage-solidsswatches-05.jpg"
+      ]
+    }
+  ]
+}

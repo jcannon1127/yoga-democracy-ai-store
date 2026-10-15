@@ -1,0 +1,17 @@
+{
+  "slug": "wholesale",
+  "title": "Wholesale",
+  "description": "Eco-Friendly activewear for yoga, run and leisure. Leggings, yoga shorts and tops. Highest rated for hot yoga. Leading brand in recycled, eco-friendly women's activewear. Sustainable workout clothes made from recycled plastic. Sizes 2XS-3XL. Free Shipping + Returns",
+  "source_url": "https://www.yogademocracy.com/wholesale.html",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Wholesale",
+      "level": 1
+    },
+    {
+      "type": "text",
+      "text": "Please email us at cs@yogademocracy.com if you would like to learn more about our wholesale program."
+    }
+  ]
+}

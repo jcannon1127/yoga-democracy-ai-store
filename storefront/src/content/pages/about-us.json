@@ -1,0 +1,84 @@
+{
+  "slug": "about-us",
+  "title": "About Us | Yoga Democracy Activewear, Eco-Friendly",
+  "description": "Yoga Democracy",
+  "source_url": "https://www.yogademocracy.com/pages/about-us.html",
+  "blocks": [
+    {
+      "type": "banner",
+      "src": "/content/about-us/about-us-header.jpg"
+    },
+    {
+      "type": "heading",
+      "text": "About Us",
+      "level": 2
+    },
+    {
+      "type": "text",
+      "text": "Born and designed in the awe inspiring desert landscape of Arizona, we are rooted in the principles of uniting people, nurturing the planet, and embracing life as a work of art\u2014 a vibrant, ever-changing canvas inspired by our surroundings. YD was established to allow women the ability to express their inner selves with our artistic athleisure apparel."
+    },
+    {
+      "type": "text",
+      "text": "We are focused on the solidity and whimsicality of women. Whether you\u2019re training for your next marathon, heading to the beach, or working from home, our unique patterns and colors are curated to complement your daily pursuit of happiness."
+    },
+    {
+      "type": "text",
+      "text": "Like the steadfast tree that represents our company, we are forever growing and evolving in harmony with humanity and nature alike. With sustainable processes, compassionate practices, and industry-defining designs, YD isn\u2019t just any apparel company, we are an expression of your world."
+    },
+    {
+      "type": "video",
+      "youtube_id": "xsfR-fn0uFg",
+      "src": "https://www.youtube.com/embed/xsfR-fn0uFg"
+    },
+    {
+      "type": "banner",
+      "src": "/content/about-us/building-community-header.png"
+    },
+    {
+      "type": "heading",
+      "text": "Building Community",
+      "level": 2
+    },
+    {
+      "type": "text",
+      "text": "We are committed to building a strong and sustainable community by empowering skilled artisans through hands-on training in the art of textile craftsmanship. By providing an alternative skill set, we not only help increase earning potential but also create a platform for personal growth and economic independence."
+    },
+    {
+      "type": "text",
+      "text": "This initiative fosters a sense of pride and belonging, as artisans become integral members of a growing network dedicated to quality craftsmanship and innovation. In turn, this drives the growth of our business and contributes to the flourishing of the local community, ensuring that we all rise together."
+    },
+    {
+      "type": "image",
+      "src": "/content/about-us/building-each-other-1.png"
+    },
+    {
+      "type": "banner",
+      "src": "/content/about-us/our-facility-header.jpg"
+    },
+    {
+      "type": "heading",
+      "text": "Our Facility",
+      "level": 2
+    },
+    {
+      "type": "text",
+      "text": "We are proud to have established a modern facility next to the scenic flower fields of Naivasha, Kenya, where we directly contribute to the local economy and community growth. With unemployment dangerously high, creating jobs in this region plays a vital role in ensuring economic stability and providing opportunities for personal and professional advancement."
+    },
+    {
+      "type": "text",
+      "text": "Being a part of the building and setup of our facility has been an immensely rewarding experience for us as a company. We have selected high-quality tools and machinery and provided onsite training to meet the needs of our artisans and employees ensuring that we deliver exceptional products while empowering our team with the skills and resources to succeed."
+    },
+    {
+      "type": "text",
+      "text": "This facility not only supports our current operations but also provides room for future expansion, allowing us to continue building jobs, fostering community growth, and contributing to the overall development of the region. We are excited about the future and the positive impact our work is having all across the globe."
+    },
+    {
+      "type": "image",
+      "src": "/content/about-us/building-each-other-2.png"
+    },
+    {
+      "type": "image",
+      "src": "/content/about-us/for-the-planet-small.png"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "_why": "The live size-chart page's <title> is the generic site title, so the extractor picks up 'Yoga Democracy Activewear, Eco-Friendly' as the page name. Overriding it here rather than in size-chart.json, because the extractor overwrites that file wholesale — this override was lost exactly that way once.",
+  "title": "Size Chart",
+  "blocks": []
+}

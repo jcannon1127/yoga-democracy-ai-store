@@ -1,0 +1,256 @@
+import { MedusaRequest, MedusaResponse } from "@medusajs/framework"
+import { Modules } from "@medusajs/framework/utils"
+import {
+  CybersourceClient,
+  WALLET_PAYMENT_SOLUTION,
+  WalletType,
+} from "../../../../client/cybersource-client"
+
+type AuthorizeRequestBody = {
+  payment_session_id: string
+  /** Flex Microform card path. Mutually exclusive with wallet_payload. */
+  transient_token?: string
+  /** Apple Pay / Google Pay path: the encrypted wallet payload, passed to
+   *  CyberSource verbatim. Mutually exclusive with transient_token. */
+  wallet_payload?: string
+  wallet_type?: WalletType
+  fingerprint_session_id?: string
+  bill_to?: {
+    firstName?: string
+    lastName?: string
+    address1?: string
+    locality?: string
+    administrativeArea?: string
+    country?: string
+    email?: string
+    postalCode?: string
+  }
+}
+
+/**
+ * POST /store/cybersource/authorize
+ *
+ * Pre-authorizes a payment using the Flex Microform transient token.
+ * Must be called by the storefront BEFORE calling cart complete (placeOrder).
+ *
+ * Flow:
+ * 1. Storefront gets captureContext from payment_session.data.captureContext
+ * 2. Storefront initializes Flex Microform and collects card data
+ * 3. Storefront calls microform.createToken() → gets transient_token
+ * 4. Storefront calls this endpoint with { payment_session_id, transient_token }
+ * 5. This endpoint calls CyberSource to authorize
+ * 6. Stores cs_payment_id in PaymentSession.data
+ * 7. Storefront calls placeOrder() → authorizePayment() reads cs_payment_id
+ */
+const CARD_TYPE_NAMES: Record<string, string> = {
+  "001": "Visa",
+  "002": "Mastercard",
+  "003": "American Express",
+  "004": "Discover",
+  "005": "Diners Club",
+  "007": "JCB",
+  "024": "Maestro",
+  "042": "Maestro",
+  "050": "Hipercard",
+  "054": "Elo",
+  "062": "UnionPay",
+}
+
+export const POST = async (
+  req: MedusaRequest<AuthorizeRequestBody>,
+  res: MedusaResponse
+) => {
+  const {
+    payment_session_id,
+    transient_token,
+    wallet_payload,
+    wallet_type,
+    fingerprint_session_id,
+    bill_to,
+  } = req.body as AuthorizeRequestBody
+
+  if (!payment_session_id) {
+    return res
+      .status(400)
+      .json({ error: "payment_session_id is required" })
+  }
+
+  // Exactly one instrument. Accepting both would leave which one was charged
+  // ambiguous, and silently preferring one is the kind of thing nobody notices
+  // until a reconciliation gap appears.
+  if (!transient_token && !wallet_payload) {
+    return res
+      .status(400)
+      .json({ error: "transient_token or wallet_payload is required" })
+  }
+  if (transient_token && wallet_payload) {
+    return res
+      .status(400)
+      .json({ error: "provide transient_token or wallet_payload, not both" })
+  }
+  if (wallet_payload && !(wallet_type && wallet_type in WALLET_PAYMENT_SOLUTION)) {
+    return res.status(400).json({
+      error: `wallet_type must be one of: ${Object.keys(WALLET_PAYMENT_SOLUTION).join(", ")}`,
+    })
+  }
+
+  const paymentModule = req.scope.resolve(Modules.PAYMENT)
+
+  // Fetch the existing payment session
+  const sessions = await paymentModule.listPaymentSessions({
+    id: [payment_session_id],
+  })
+
+  const session = sessions[0]
+
+  if (!session) {
+    return res
+      .status(404)
+      .json({ error: "Payment session not found" })
+  }
+
+  // Verify this session belongs to a CyberSource provider
+  if (!session.provider_id?.includes("cybersource")) {
+    return res
+      .status(400)
+      .json({ error: "Payment session is not a CyberSource session" })
+  }
+
+  const sessionData = session.data as Record<string, any>
+
+  if (!sessionData?.amount || !sessionData?.currency) {
+    return res
+      .status(400)
+      .json({ error: "Payment session data is missing amount or currency" })
+  }
+
+  const autoCapture = process.env.CYBERSOURCE_AUTO_CAPTURE === "true"
+
+  // If the order total is zero (100% discount, free gift, etc.), skip CyberSource
+  // entirely — gateways reject $0 authorizations. Mark as authorized directly.
+  const orderAmount = parseFloat(sessionData.amount as string)
+  if (orderAmount <= 0) {
+    await paymentModule.updatePaymentSession({
+      id: payment_session_id,
+      amount: 0,
+      currency_code: session.currency_code,
+      data: {
+        ...sessionData,
+        cs_payment_id: "FREE_ORDER",
+        cs_status: "AUTHORIZED",
+        ...(autoCapture && { cs_capture_id: "FREE_ORDER" }),
+      },
+    })
+    return res.json({
+      success: true,
+      cs_payment_id: "FREE_ORDER",
+      cs_status: "AUTHORIZED",
+    })
+  }
+
+  // Initialize the CyberSource client with env vars
+  const csOptions = {
+    merchantID: process.env.CYBERSOURCE_MERCHANT_ID!,
+    merchantKeyId: process.env.CYBERSOURCE_KEY_ID!,
+    merchantsecretKey: process.env.CYBERSOURCE_SECRET_KEY!,
+    environment: (process.env.CYBERSOURCE_ENV === "production"
+      ? "production"
+      : "sandbox") as "sandbox" | "production",
+    capture: autoCapture,
+  }
+
+  const client = new CybersourceClient(csOptions)
+
+  try {
+    // Same amount, same reference, same capture mode, same fraud fingerprint --
+    // the ONLY difference between a card and a wallet is how the instrument
+    // arrives. Everything downstream (capture, void, refund, reconciliation) is
+    // identical, which is why wallets ride on the existing merchant account.
+    const shared = {
+      amount: sessionData.amount as string,
+      currency: sessionData.currency as string,
+      // Medusa session id as idempotency key, to prevent duplicate charges
+      referenceCode: payment_session_id,
+      capture: autoCapture,
+      fingerprintSessionId: fingerprint_session_id,
+      billTo: bill_to,
+    }
+
+    const authResult = wallet_payload
+      ? await client.authorizeWallet({
+          ...shared,
+          walletType: wallet_type as WalletType,
+          walletPayload: wallet_payload,
+        })
+      : await client.authorizePayment({
+          ...shared,
+          transientToken: transient_token as string,
+        })
+
+    // Check for declined authorization
+    if (
+      authResult.status === "DECLINED" ||
+      authResult.status === "INVALID_REQUEST" ||
+      authResult.status === "AUTHORIZED_RISK_DECLINED"
+    ) {
+      const reason =
+        authResult.errorInformation?.reason ?? authResult.status
+      const message =
+        authResult.errorInformation?.message ?? "Payment was declined"
+
+      return res.status(402).json({
+        error: "Payment declined",
+        reason,
+        message,
+        cs_status: authResult.status,
+      })
+    }
+
+    // Update the payment session with the CyberSource authorization result.
+    // amount must always be provided to updatePaymentSession or MikroORM throws.
+    // Medusa v2 stores amounts in standard units (quetzales, not centavos).
+    // session.amount is a BigNumber object that MikroORM may mishandle if passed directly.
+    // Parse sessionData.amount (our stored quetzales string, e.g. "1780.63") as a plain
+    // JS number so Medusa correctly persists PaymentSession.amount and downstream
+    // Capture.amount, which is required for the refund balance to be non-zero.
+    const sessionAmountPlain = parseFloat(sessionData.amount as string)
+    await paymentModule.updatePaymentSession({
+      id: payment_session_id,
+      amount: sessionAmountPlain,
+      currency_code: session.currency_code,
+      data: {
+        ...sessionData,
+        transient_token,
+        cs_payment_id: authResult.id,
+        cs_status: authResult.status,
+        cs_reconciliation_id: authResult.reconciliationId,
+        // En sale/auto-capture mode, CyberSource devuelve "AUTHORIZED" (no "CAPTURED")
+        // porque el capture ocurre en el batch de liquidación. El mismo transaction ID
+        // es el auth ID y el capture ID. Lo guardamos para que capturePayment no
+        // intente capturar de nuevo en CyberSource.
+        ...(autoCapture && { cs_capture_id: authResult.id }),
+        card_last_four:
+          authResult.paymentInformation?.card?.suffix ??
+          authResult.paymentAccountInformation?.card?.suffix,
+        card_type: (() => {
+          const code =
+            authResult.paymentInformation?.card?.type ??
+            authResult.paymentAccountInformation?.card?.type
+          return code ? (CARD_TYPE_NAMES[code] ?? code) : undefined
+        })(),
+      },
+    })
+
+    return res.json({
+      success: true,
+      cs_payment_id: authResult.id,
+      cs_status: authResult.status,
+    })
+  } catch (error: any) {
+    console.error("CyberSource authorize error:", error)
+    return res.status(500).json({
+      error: "Payment authorization failed",
+      message: error.message,
+    })
+  }
+}

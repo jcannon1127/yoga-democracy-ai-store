@@ -1,0 +1,4751 @@
+{
+  "_why": "Garment type and Prints/Solids per product, read from the live site's own filters. Size and Length are derived from Medusa variant options at render time. Type has no Medusa equivalent; Prints/Solids LOOKS derivable from the print code but is not, because print codes are recycled and solids also sit at low codes.",
+  "_source": "scripts/sfcc_facet_scrape.py against yogademocracy.com",
+  "value_order": {
+    "productType": [
+      "Tops & Tanks",
+      "All Bottoms",
+      "Sports Bra",
+      "Leggings",
+      "Bells & Flares",
+      "Trousers",
+      "Shorts",
+      "Skirt"
+    ],
+    "printsSolids": [
+      "Prints",
+      "Solids"
+    ],
+    "length": [
+      "Extra Long (32\")",
+      "Long/Extra Long (36\")",
+      "Long (34”)",
+      "Regular (32”)",
+      "Short/Reg (32\")",
+      "Short  (30”)",
+      "Standard (28\")",
+      "Standard (32\")"
+    ]
+  },
+  "facets": {
+    "anywhere-flare-clover": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-crushed-cherry": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-dreamcloud": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-fawn-1123-2500": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-hiking-trail-1123-2502": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-in-jet-black": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-mint-to-be-1123-134": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "anywhere-flare-mulberry-1123-2503": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-mushroom": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-nocturnal-1123-8": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-overcast": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-polka-dot-1123-234": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "anywhere-flare-sea-salt": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-skydive": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-spring-grove": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-stardust-1123-136": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "anywhere-flare-starstruck-1123-154": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "anywhere-flare-sunbeam": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "anywhere-flare-tropical-paradise": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "anywhere-flare-winging-moves-1123-117": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "art-deco-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "art-deco-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "art-deco-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "ballet-barre-long-sleeve-in-elegant-empire": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ballet-barre-long-sleeve-in-folklore": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ballet-barre-long-sleeve-in-humble-warrior": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ballet-barre-long-sleeve-in-polka-dot": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ballet-barre-long-sleeve-in-skydive": {
+      "productType": [
+        "Tops & Tanks"
+      ]
+    },
+    "ballet-barre-long-sleeve-in-star-dust": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ballet-barre-long-sleeve-in-starstruck": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "beeloved-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "bell-bottoms-2-0-in-botanical-garden": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "bell-bottoms-2-0-in-buggin-out": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "bell-bottoms-2-0-in-crushed-cherry-1118": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long/Extra Long (36\")",
+        "Short/Reg (32\")"
+      ]
+    },
+    "bell-bottoms-2-0-in-emerge": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "bell-bottoms-2-0-in-fawn": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "bell-bottoms-2-0-in-flower-power": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "bell-bottoms-2-0-in-forest-green": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "bell-bottoms-2-0-in-lavender-love": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "bell-bottoms-2-0-in-polka-dot-1118": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Long/Extra Long (36\")",
+        "Short/Reg (32\")"
+      ]
+    },
+    "bell-bottoms-2-0-in-polka-dot-in-dreamcloud-1118": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Long/Extra Long (36\")",
+        "Short/Reg (32\")"
+      ]
+    },
+    "bell-bottoms-2-0-in-presence": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "bell-bottoms-2-0-in-skydive": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Long/Extra Long (36\")",
+        "Short/Reg (32\")"
+      ]
+    },
+    "biker-joey-short-in-camo-slate": {
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-joey-short-in-green-thumb": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-joey-short-in-pretty-in-pink-1303": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-joey-short-in-pretty-in-pink-1304": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-joey-short-in-star-dust": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-short-henna-my-heart-1304-92": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-short-in-clever-koi": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-short-in-fawn": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "biker-short-in-hiking-trail": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "biker-short-in-nocturnal": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "biker-short-jet-black": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "biker-shorts-curry-up": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-shorts-hot-tropic": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-shorts-in-flower-bomb": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "biker-shorts-in-golden-girl": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "botanical-garden-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "buggin-out-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "buggin-out-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "candy-stripe-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "capri-legging-coral-my-name-1201-74": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "capri-legging-urban-camo-slate-1201-100": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "celestial-timing-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")"
+      ]
+    },
+    "clever-koi-limitless-sports-bra": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "clever-koi-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "court-skort-burnt-dreamcloud": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-clover": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-hot-tropic": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-in-jet-black": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-in-lavender-love": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-in-mosaic-in-blue": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-in-peach-out": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-in-sage-green": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-leaf-it-to-me": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-main-squeeze-1702-173": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-mushroom": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-overcast": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-ready-to-curry-up": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-ready-to-flamingle": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-sea-salt": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-spring-grove": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-starstruck": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "court-skort-sunbeam": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "court-skort-urban-camo-slate": {
+      "productType": [
+        "All Bottoms",
+        "Skirt"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "curry-up-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "curry-up-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "divine-feminine-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "divine-feminine-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "divine-feminine-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "double-rainbow-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "electric-flow-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "electric-flow-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "electric-flow-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "elegant-empire-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "elegant-empire-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "elegant-empire-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "emerge-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "espresso-yourself-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "espresso-yourself-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "espresso-yourself-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "everyday-sports-bra-clover": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-crushed-cherry": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-dreamcloud": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-jet-black": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-mulberry": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-mushroom": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-nocturnal-1505-8": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-overcast": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-sea-salt": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-spring-grove": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-sunbeam": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-sports-bra-twig": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-clover": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-crushed-cherry": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-dreamcloud": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-jet-black": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-mushroom": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-nocturnal": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-overcast": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-sea-salt": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-skydive": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-spring-grove": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "everyday-tank-sunbeam": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "feeling-ferntastic-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "feeling-ferntastic-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")"
+      ]
+    },
+    "feminist-news-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "feminist-news-sports-bra": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "festival-denim-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "festival-denim-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "festival-denim-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "flower-bomb-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "flower-bomb-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "flower-child-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "flower-child-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "flower-power-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "flower-power-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "folklore-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "folklore-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "fortune-teller-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")"
+      ]
+    },
+    "free-range-sports-bra-charleston-1504-132": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-clover": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-crushed-cherry": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-dreamcloud": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-emerge": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-fun-gal": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-green-thumb": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-curry-up": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-electric-flow": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-espresso-yourself": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-festival-denim": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-hot-tropic": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-jet-black": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-in-mint-to-be": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-peach-out": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-polka-dot": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-polka-dot-in-dreamcloud": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-pretty-in-pink": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-retro-rainbow": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-rustica": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-star-dust": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-starstruck": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-in-zen-water-garden": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-just-a-dark-moon-phase-1504-129": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-leaf-it-to-me": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-mushroom": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-overcast": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-pretty-in-black": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-root-chakra-laka-1504-120": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-bra-sea-salt": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-skydive": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-spring-grove": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-sunbeam": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "free-range-sports-bra-urban-camo-slate-1504-100": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "free-range-sports-clever-koi": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "fun-gal-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "fun-gal-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "fun-gal-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "ghost-leopard-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ghost-leopard-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "goddess-cowl-tank-in-botanical-garden": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "goddess-cowl-tank-in-flower-power": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "goddess-cowl-tank-in-jet-black": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "goddess-cowl-tank-in-maroon": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "goddess-cowl-tank-in-patchwork": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "goddess-cowl-tank-in-peach-out": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "goddess-tank-mulberry": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "goddess-tank-nocturnal-1613-8": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "goddess-tank-twig-1613-2501": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "golden-girl-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "green-thumb-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "green-thumb-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "green-thumb-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "hot-tropic-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "humble-warrior-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "humble-warrior-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "humble-warrior-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "indie-flow-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "indie-flow-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "indie-flow-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "lavender-love-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "lavender-love-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "leaf-it-to-me-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "light-of-day-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "light-of-day-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "limitless-sports-bra-clover": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-crushed-cherry": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-curry-up": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-sports-bra-dreamcloud": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-flower-child": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-sports-bra-hot-tropic": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-sports-bra-in-jet-black-medium-support-a-e-cups": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-in-natures-poison-medium-support-a-e-cups": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-sports-bra-in-nocturnal-medium-support-a-e-cups": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-leaf-it-to-me": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-sports-bra-mushroom": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-overcast": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-ready-to-flamingle": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-sports-bra-sea-salt": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-skydive": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-spring-grove": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-sunbeam": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "limitless-sports-bra-urban-camo-slate": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-tank-flower-power": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "limitless-tank-in-peach-out": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mint-to-be-printed-yoga-crops": {
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mint-to-be-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "moon-phase-limitless-sports-bra": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mosaic-in-blue-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")"
+      ]
+    },
+    "movement-short-in-electric-flow": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "movement-short-in-indie-flow": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mystique-bra-in-art-deco": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mystique-bra-in-humble-warrior": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mystique-bra-in-skydive": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "mystique-bra-in-star-dust": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mystique-bra-in-starstruck": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mystique-bra-in-the-charleston": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mystique-bra-in-tropical-paradise": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "mystique-bra-in-winging-moves": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "natures-poison-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "natures-poison-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "non-stop-short-curry-up": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "non-stop-short-hot-tropic": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "non-stop-short-in-burnt-orange": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "non-stop-short-in-jet-black": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "non-stop-short-in-lavender-love": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "non-stop-short-leaf-it-to-me-1308-90": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "non-stop-short-polka-dot-in-dreamcloud": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "non-stop-short-root-chakra-laka-1308-120": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-legging-dreamcloud": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-forest-green-1120-7": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-maroon-1120-5": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-mulberry-1120-2503": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-nocturnal-1120-8": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-overcast": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-sea-salt": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-skydive-1120-2514": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-spring-grove": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-legging-twig-1120-2501": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-leggings-clover": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-canopy-in-nocturnal": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-short-clover": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-dreamcloud": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-main-squeeze": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-short-maroon-1308-5": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-mushroom": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-natures-poison-1308-220": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-short-overcast": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-peach-out-1308-225": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-short-ready-to-flamingle": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-short-root-chakra-in-black-1308-131": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-short-sea-salt": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-skydive": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-spring-grove": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "nonstop-short-stardust-1308-136": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "nonstop-short-sunbeam": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "notorious-rbg-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")"
+      ]
+    },
+    "off-the-shoulder-bandeau-in-transformation": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-canopy-in-nocturnal": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-clover": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-crushed-cherry": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-dreamcloud": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-green-thumb": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-hiking-trail": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-in-festival-denim": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-flower-bomb-1": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-ghost-leopard": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-main-squeeze": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-mint-to-be": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-moon-phase": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-polka-dot": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-polka-dot-in-dreamcloud": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-ready-to-flamingle": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-rustica": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-in-starstruck": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "om-tank-jet-black": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-mulberry": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-mushroom": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-nocturnal": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-overcast": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-sea-salt": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-spring-grove": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-sunbeam": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "om-tank-twig": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "open-shoulder-top-in-botanical-garden": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "open-shoulder-top-in-forest-green": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "open-shoulder-top-in-friday-the-13th": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "open-shoulder-top-in-jet-black": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "open-shoulder-top-in-transformation": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "open-shoulder-top-la-loba-1612-217": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "open-shoulder-top-symbiosis-1612-227": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-double-rainbow-1114-194": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-fawn-1114-2500": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "original-bell-feminist-news-1114-168": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-hot-tropic": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-mint-to-be": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-pretty-in-black": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-ready-to-flamingle": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-root-chakra-blackout-1114-131": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-root-chakra-laka-1114-120": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "original-bell-urban-camo-slate-1114-100": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ouroboros-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ouroboros-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "patchwork-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")"
+      ]
+    },
+    "peach-out-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "peach-out-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "pocket-bell-clover": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Standard (32\")"
+      ]
+    },
+    "pocket-bell-dreamcloud": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Standard (32\")"
+      ]
+    },
+    "pocket-bell-jet-black-1118": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long/Extra Long (36\")",
+        "Short/Reg (32\")"
+      ]
+    },
+    "pocket-bell-mushroom": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Standard (32\")"
+      ]
+    },
+    "pocket-bell-nocturnal-1118-8": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long/Extra Long (36\")",
+        "Short/Reg (32\")"
+      ]
+    },
+    "pocket-bell-overcast": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Standard (32\")"
+      ]
+    },
+    "pocket-bell-peach-out-1118-225": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "pocket-bell-sea-salt": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Standard (32\")"
+      ]
+    },
+    "pocket-bell-spring-grove": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Standard (32\")"
+      ]
+    },
+    "pocket-bell-sunbeam": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Standard (32\")"
+      ]
+    },
+    "polka-dot-in-dreamcloud-limitless-sports-bra": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "polka-dot-in-dreamcloud-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "polka-dot-in-dreamcloud-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "polka-dot-in-dreamcloud-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "polka-dot-limitless-sports-bra": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "polka-dot-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "polka-dot-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "polka-dot-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "presence-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")"
+      ]
+    },
+    "pretty-in-black-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "pretty-in-black-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "pretty-in-pink-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "pretty-in-pink-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "pretty-in-pink-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "rad-paisley-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "rad-paisley-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "rad-paisley-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "rainbow-love-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "rainbow-love-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "rainbow-love-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "rawr-talent-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "rawr-talent-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "ready-or-knot-tank-botanical-garden-1606-231": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-canopy-in-nocturnal": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-clover": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-cool-cirebon-1606-15": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-crushed-cherry": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-curry-up": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-dreamcloud": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-emerge": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-friday-the-13th-1606-226": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-green-thumb": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-hiking-trail": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-hot-tropic": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-jet-black-1606-1": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-leaf-it-to-me": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-main-squeeze": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-mint-to-be-1606-134": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-mulberry": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-mushroom": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-nocturnal": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-overcast": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-patchwork-1606-223": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-pretty-in-black": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-ready-to-flamingle": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-root-chakra-blackout-1606-131": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-root-chakra-laka-1606-120": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-sea-salt": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-spring-grove": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-star-dust-1606-136": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-sunbeam": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-the-charleston-1606-132": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-twig": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ready-or-knot-tank-vibrant-bukhara": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-vibrant-cirebon": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-or-knot-tank-winging-moves-1606-117": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "ready-to-flamingle-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "red-rocks-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "red-rocks-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "retro-rainbow-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-clever-koi": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-coral-my-name": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-double-rainbow": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-feeling-ferntastic": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-flower-bomb": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-flower-child": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-flower-power": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-folklore": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-fortune-teller": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-fun-gal": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-golden-girl": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-humble-warrior": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-la-loba": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-pretty-in-pink": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-rad-paisley": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-rawr-talent": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-sea-goddess": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "reversible-knot-top-in-transformation": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "river-rock-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "roam-free-jacket-forest-green-1802-7": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "roam-free-jacket-in-jet-black": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "roam-free-jacket-in-mulberry": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "roam-free-jacket-in-nocturnal": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "roam-free-jacket-twig-1802-2501": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "rustica-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "rustica-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "rustica-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "split-n-flare-pant-celestial-timing-1116-211": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "split-n-flare-pant-ouroboros-1116-213": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "split-n-flare-pant-pedra-1116-206": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "split-n-flare-pant-river-rock-1116-205": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "split-n-flare-pant-tropical-paradise-1116-208": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "split-n-flare-pant-wisdom-seeker-1116-212": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "star-dust-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "star-dust-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "stardust-limitless-sports-bra": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "stardust-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "starstruck-limitless-sports-bra": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "starstruck-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "starstruck-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "starstruck-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "sun-salutation-printed-yoga-legging": {
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "sunday-jogger-clover": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-dreamcloud": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-in-burnt-orange": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-in-forest-green": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-in-hiking-trail": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-in-jet-black": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-in-maroon": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-in-mulberry": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-in-twig": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-mushroom": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-nocturnal-1117-8": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-overcast": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-sea-salt": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-spring-grove": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "sunday-jogger-sunbeam": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "the-charleston-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-charleston-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-charleston-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "the-creator-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "the-joey-yoga-short-in-festival-denim": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-joey-yoga-short-in-rustica": {
+      "productType": [
+        "All Bottoms",
+        "Shorts"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-maverick-bra-in-burnt-orange": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "the-maverick-bra-in-emerge": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-maverick-bra-in-indie-flow": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-maverick-bra-in-jet-black": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "the-maverick-bra-in-lavender-love": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-maverick-bra-in-natures-poison": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "the-maverick-bra-in-wisdom-seeker": {
+      "productType": [
+        "Sports Bra"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "transformation-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "transformation-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "tropical-paradise-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "ultimate-trouser-clover-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-crushed-cherry-1129": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-dreamcloud-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-in-burnt-orange": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-in-forest-green": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-in-hiking-trail": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-in-jet-black-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-in-maroon": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-in-mulberry": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-in-nocturnal-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-in-twig": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-mushroom-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-overcast": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-sage-green": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "ultimate-trouser-sea-salt-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-skydive-1119-2514": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-spring-grove-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "ultimate-trouser-sunbeam-1119": {
+      "productType": [
+        "All Bottoms",
+        "Trousers"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Long (34”)",
+        "Regular (32”)",
+        "Short  (30”)"
+      ]
+    },
+    "vitality-tank-in-forest-green": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "vitality-tank-nocturnal-1508-8": {
+      "productType": [
+        "Tops & Tanks"
+      ],
+      "printsSolids": [
+        "Solids"
+      ]
+    },
+    "warrior-one-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "warrior-one-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "warrior-one-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "wildcat-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "wildcat-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "winging-moves-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "winging-moves-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "winging-moves-printed-yoga-legging": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Solids"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "wisdom-seeker-printed-yoga-crops": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    },
+    "wisdom-seeker-printed-yoga-leggings": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-coral-my-name-1103-74": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-georgia-1103-21": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-golden-girl": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-henna-my-heart-1103-92": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-just-a-dark-moon-phase-1103-129": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Extra Long (32\")",
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-main-squeeze": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-root-chakra-1103-120": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-root-chakra-blackout-1103-131": {
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "yd-legging-urban-camo-slate-1103-100": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "zen-water-garden": {
+      "productType": [
+        "All Bottoms",
+        "Leggings"
+      ],
+      "printsSolids": [
+        "Prints"
+      ],
+      "length": [
+        "Standard (28\")"
+      ]
+    },
+    "zen-water-garden-printed-bell-bottoms": {
+      "productType": [
+        "All Bottoms",
+        "Bells & Flares"
+      ],
+      "printsSolids": [
+        "Prints"
+      ]
+    }
+  }
+}

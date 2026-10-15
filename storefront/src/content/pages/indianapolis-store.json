@@ -1,0 +1,54 @@
+{
+  "slug": "indianapolis-store",
+  "title": "Indianapolis Store | Yoga Democracy Activewear, Eco-Friendly",
+  "description": "Welcome to the Yoga Democracy Retail Store. Located in Indianapolis Indiana. Shop and try on our best selling athleisure in person at our retail store.",
+  "source_url": "https://www.yogademocracy.com/pages/indianapolis-store.html",
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/indianapolis-store/indy-store-header.jpg"
+    },
+    {
+      "type": "text",
+      "text": "Opened in 2025, YD Indy is a space designed not just for shopping, but for connection. While our online presence has allowed us to reach customers everywhere, we believe there\u2019s something irreplaceable about being able to feel the fabric, try on a perfect fit, and have a real conversation with someone who shares your passion for comfort, movement, and style. Our new store is more than a place to browse our latest athleisure collections\u2014it\u2019s a hub for building community, hosting events, and celebrating the lifestyle that inspires everything we create. We can\u2019t wait to welcome you in."
+    },
+    {
+      "type": "heading",
+      "text": "1724 E 86th St, Indianapolis, IN 46240",
+      "level": 3
+    },
+    {
+      "type": "heading",
+      "text": "Store Hours",
+      "level": 3
+    },
+    {
+      "type": "text",
+      "text": "Monday: CLOSED"
+    },
+    {
+      "type": "text",
+      "text": "Tuesday: 9am-5pm"
+    },
+    {
+      "type": "text",
+      "text": "Wednesday: 9am-5pm"
+    },
+    {
+      "type": "text",
+      "text": "Thursday: 9am-5pm"
+    },
+    {
+      "type": "text",
+      "text": "Friday: 9am-5pm"
+    },
+    {
+      "type": "text",
+      "text": "Saturday: 9am-5pm"
+    },
+    {
+      "type": "text",
+      "text": "Sunday: CLOSED"
+    }
+  ]
+}

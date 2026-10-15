@@ -1,0 +1,34 @@
+{
+ "slug": "contact-us",
+ "title": "Contact Us | Yoga Democracy Activewear, Eco-Friendly",
+ "description": "Reach Yoga Democracy's customer service team.",
+ "source_url": "https://www.yogademocracy.com/contact-us",
+ "blocks": [
+  {
+   "type": "heading",
+   "text": "Contact Us",
+   "level": 2
+  },
+  {
+   "type": "text",
+   "text": "You shared. We listened. From day one, Yoga Democracy has been all about connection\u2014finding ways to honor our planet and each other while doing things a little differently. We\u2019re more than just sustainable activewear; we\u2019re building a movement, a lifestyle, and a community that thrives on fresh ideas and meaningful connection."
+  },
+  {
+   "type": "text",
+   "text": "We are actively undergoing new updates to our contact us page centered around innovative ways to stay connected, easier navigation to get to where you need to go, and fast communication between our team and you. Please continue to check back here for updates."
+  },
+  {
+   "type": "heading",
+   "text": "Need help with a question? Looking for a way to connect?",
+   "level": 3
+  },
+  {
+   "type": "text",
+   "text": "For the fastest response, please reach out to our awesome customer service team at cs@yogademocracy.com and they can help point you in the right direction!"
+  },
+  {
+   "type": "text",
+   "text": "Email us: cs@yogademocracy.com \u2014 we typically reply within two business days."
+  }
+ ]
+}

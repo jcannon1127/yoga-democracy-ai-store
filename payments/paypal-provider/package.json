@@ -1,0 +1,100 @@
+{
+  "name": "@alphabite/medusa-paypal",
+  "version": "0.2.6-yd.1",
+  "description": "Alphabite's Medusa Paypal Plugin",
+  "author": "Alphabite (https://alphabite.io)",
+  "license": "MIT",
+  "main": "./.medusa/server/src/index.js",
+  "types": "./.medusa/types/index.d.ts",
+  "files": [
+    ".medusa/server",
+    ".medusa/types"
+  ],
+  "bugs": {
+    "url": "https://github.com/alphabite-dev/medusa-paypal/issues"
+  },
+  "homepage": "https://github.com/alphabite-dev/medusa-paypal#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alphabite-dev/medusa-paypal.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./.medusa/types/index.d.ts",
+      "import": "./.medusa/server/src/index.js",
+      "require": "./.medusa/server/src/index.js",
+      "default": "./.medusa/server/src/index.js"
+    },
+    "./package.json": "./package.json",
+    "./.medusa/server/src/modules/*": "./.medusa/server/src/modules/*/index.js",
+    "./providers/*": "./.medusa/server/src/providers/*/index.js",
+    "./*": "./.medusa/server/src/*.js",
+    "./admin": {
+      "import": "./.medusa/server/src/admin/index.mjs",
+      "require": "./.medusa/server/src/admin/index.js",
+      "default": "./.medusa/server/src/admin/index.js"
+    }
+  },
+  "keywords": [
+    "medusa",
+    "medusa-v2",
+    "medusa-plugin",
+    "medusa-plugin-integration",
+    "medusa-plugin-payment",
+    "medusa-paypal-payment",
+    "medusa-alphabite",
+    "medusa-alphabite-plugin",
+    "medusa-alphabite-paypal-plugin",
+    "medusa-paypal-plugin",
+    "medusa-paypal-integration",
+    "medusa-paypal"
+  ],
+  "scripts": {
+    "build": "npx medusa plugin:build && npm run build:types",
+    "build:types": "tsc --project tsconfig.types.json",
+    "dev": "medusa plugin:develop",
+    "prepublishOnly": "medusa plugin:build"
+  },
+  "dependencies": {
+    "@paypal/paypal-server-sdk": "1.0.0",
+    "libphonenumber-js": "^1.12.9"
+  },
+  "devDependencies": {
+    "@medusajs/admin-sdk": "2.19.0",
+    "@medusajs/cli": "2.19.0",
+    "@medusajs/framework": "2.19.0",
+    "@medusajs/icons": "2.19.0",
+    "@medusajs/medusa": "2.19.0",
+    "@medusajs/test-utils": "2.19.0",
+    "@medusajs/ui": "^4.2.1",
+    "@mikro-orm/cli": "6.4.3",
+    "@mikro-orm/core": "6.4.3",
+    "@mikro-orm/knex": "6.4.3",
+    "@mikro-orm/migrations": "6.4.3",
+    "@mikro-orm/postgresql": "6.4.3",
+    "@swc/core": "^1.7.28",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.2.25",
+    "awilix": "^8.0.1",
+    "pg": "^8.13.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "vite": "^5.2.11",
+    "yalc": "^1.0.0-pre.53"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": ">=2.13.6"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": true
+}

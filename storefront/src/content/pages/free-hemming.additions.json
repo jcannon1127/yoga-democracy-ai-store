@@ -1,0 +1,17 @@
+{
+  "_why": "Content we ADD or CORRECT. Kept separate because scripts/extract_sfcc_page.py overwrites the generated file wholesale.",
+  "approved_by": "Jeff, 2026-08-21 (video); US-only ruling 2026-08-22",
+  "source": "https://youtu.be/c_GiyamqM5Y",
+  "replacements": [
+    {
+      "find": "all our US and Canadian customers",
+      "replace": "all our US customers",
+      "_why": "US-only for launch (Jeff, 2026-08-22). 138 of 12,216 deliveries in the last year went outside the US. Promising a service to Canadian customers the site cannot sell to is a promise we cannot keep."
+    }
+  ],
+  "blocks": [
+    { "type": "heading", "level": 2, "text": "Want to hem your own bell bottoms?" },
+    { "type": "text", "text": "Prefer to do it yourself? Here is how we hem bell bottoms at our own factory — the same way we would do it for you. And if you would rather we handled it, the free hemming service above is always open." },
+    { "type": "video", "youtube_id": "c_GiyamqM5Y", "src": "https://www.youtube.com/embed/c_GiyamqM5Y" }
+  ]
+}

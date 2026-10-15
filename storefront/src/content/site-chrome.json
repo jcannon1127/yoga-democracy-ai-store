@@ -1,0 +1,281 @@
+{
+  "_note": "Business copy that changes without a code change. Edit the text, rebuild, done \u2014 no component edit, no review of TypeScript, no risk of breaking a page. See src/lib/content/site-chrome.ts.",
+  "backorder": {
+    "_note": "Shown on the product page when a size is a confirmed zero that YD will still sell. The 10-14 days is Jeff's commitment, given 2026-08-22: YD can make almost anything in Kenya and land it in that window. CHANGE THIS THE DAY IT STOPS BEING TRUE - it is a public promise, and nothing will error if it becomes false.",
+    "message": "On backorder \u2014 ships in 10\u201314 days"
+  },
+  "_why": "Header, nav and hero content. Data, not components \u2014 the merchandising team change a sale banner here without a code change, and none of it is hardcoded into JSX (tenancy rule 5). The warehouse-sale creative in particular is time-sensitive marketing and must stay swappable.",
+  "announcement": {
+    "text": "Check Out Our Warehouse Sale  |  Get Free US Shipping On Orders over $49!",
+    "href": "/warehouse-sale"
+  },
+  "logo": {
+    "src": "/brand/logo-mark.avif",
+    "alt": "Yoga Democracy",
+    "width": 110,
+    "height": 110
+  },
+  "nav": [
+    {
+      "label": "New",
+      "href": "/new"
+    },
+    {
+      "label": "Best Sellers",
+      "href": "/best-sellers"
+    },
+    {
+      "label": "Collections",
+      "href": "/collections",
+      "children": [
+        {
+          "label": "Flora & Fauna",
+          "href": "/collections/flora-and-fauna"
+        },
+        {
+          "label": "Botanical",
+          "href": "/collections/botanical"
+        },
+        {
+          "label": "Geometry",
+          "href": "/collections/geometry"
+        },
+        {
+          "label": "Elemental",
+          "href": "/collections/elemental"
+        },
+        {
+          "label": "Shop All",
+          "href": "/collections/shop-all"
+        }
+      ]
+    },
+    {
+      "label": "Solids",
+      "href": "/solids",
+      "children": [
+        {
+          "label": "Skydive",
+          "href": "/skydive",
+          "swatch": "#3465fe"
+        },
+        {
+          "label": "Crushed Cherry",
+          "href": "/crushed-cherry",
+          "swatch": "#64242e"
+        },
+        {
+          "label": "Dreamcloud",
+          "href": "/solids/dreamcloud",
+          "swatch": "#c0deff"
+        },
+        {
+          "label": "Spring Grove",
+          "href": "/solids/spring-grove",
+          "swatch": "#e8e54f"
+        },
+        {
+          "label": "Sea Salt",
+          "href": "/solids/sea-salt",
+          "swatch": "#ffb0b5"
+        },
+        {
+          "label": "Sunbeam",
+          "href": "/solids/sunbeam",
+          "swatch": "#ffeb61"
+        },
+        {
+          "label": "Clover",
+          "href": "/solids/clover",
+          "swatch": "#ec5bae"
+        },
+        {
+          "label": "Mushroom & Overcast",
+          "href": "/solids/mushroom-and-overcast",
+          "swatch": "#d7cac5"
+        },
+        {
+          "label": "Mulberry",
+          "href": "/solids/mulberry",
+          "swatch": "#582649"
+        },
+        {
+          "label": "Hiking Trail",
+          "href": "/solids/hiking-trail",
+          "swatch": "#2e4f47"
+        },
+        {
+          "label": "Twig",
+          "href": "/solids/twig",
+          "swatch": "#52422f"
+        },
+        {
+          "label": "Burnt Orange",
+          "href": "/solids/burnt-orange",
+          "swatch": "#d15e41"
+        },
+        {
+          "label": "Sage Green",
+          "href": "/solids/sage-green",
+          "swatch": "#5a7d7b"
+        },
+        {
+          "label": "Forest Green",
+          "href": "/solids/forest-green",
+          "swatch": "#565f44"
+        },
+        {
+          "label": "Nocturnal",
+          "href": "/solids/nocturnal",
+          "swatch": "#606180"
+        },
+        {
+          "label": "Maroon",
+          "href": "/solids/maroon",
+          "swatch": "#68363d"
+        },
+        {
+          "label": "Jet Black",
+          "href": "/solids/jet-black",
+          "swatch": "#131a1e"
+        },
+        {
+          "label": "White",
+          "href": "/solids/white",
+          "swatch": "#e0eaf3"
+        }
+      ]
+    },
+    {
+      "label": "Shop",
+      "href": "/shop",
+      "children": [
+        {
+          "label": "Tops",
+          "href": "/shop/tops"
+        },
+        {
+          "label": "Bottoms",
+          "href": "/shop/bottoms"
+        },
+        {
+          "label": "Shorts",
+          "href": "/shop/shorts"
+        },
+        {
+          "label": "Tanks",
+          "href": "/shop/tanks"
+        },
+        {
+          "label": "Sports Bras",
+          "href": "/shop/sports-bras"
+        },
+        {
+          "label": "Inseam Update",
+          "href": "/shop/inseam-update"
+        }
+      ]
+    },
+    {
+      "label": "Warehouse Sale",
+      "href": "/warehouse-sale"
+    }
+  ],
+  "social": [
+    {
+      "label": "X",
+      "href": "https://twitter.com/yogademocracy"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/yogademocracy/"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/yoga_democracy/"
+    },
+    {
+      "label": "Pinterest",
+      "href": "https://www.pinterest.com/yogademocracy"
+    },
+    {
+      "label": "TikTok",
+      "href": "https://www.tiktok.com/@yoga_democracy/"
+    }
+  ],
+  "utility": {
+    "show_search": true,
+    "show_wishlist": false,
+    "_note": "search: live as of 2026-08-22. wishlist: dropped for launch by yd-features."
+  },
+  "_nav_note": "Taken from the live site's header on 2026-08-22, in its order. Two live entries are deliberately absent: Gift Cards (/giftcard/ is a gift-card purchase flow, not a category, and it has no products) and the Wishlist link (dropped for launch by yd-features). Items with `children` render as a dropdown; items without are plain links, as before.",
+  "promos": [
+    {
+      "caption": "Free US Shipping $49+",
+      "href": "/pages/shipping-and-returns",
+      "icon": "truck"
+    },
+    {
+      "caption": "YD Rewards Points",
+      "href": "/pages/yd-rewards",
+      "icon": "gift"
+    },
+    {
+      "caption": "Gift Cards",
+      "href": "",
+      "icon": "gift",
+      "_note": "no destination: gift certificate purchase is not built. Link it when it is."
+    }
+  ],
+  "hero_slides": [
+    {
+      "alt": "Sky Dive",
+      "href": "/skydive",
+      "desktop": "/brand/hero-skydive-desktop.png",
+      "mobile": "/brand/hero-skydive-mobile.png"
+    },
+    {
+      "alt": "Warehouse Sale",
+      "href": "/warehouse-sale",
+      "desktop": "/brand/hero-warehouse-sale-desktop.png",
+      "mobile": "/brand/hero-warehouse-sale-mobile.png",
+      "_cta_note": "No overlaid button: this slide's ARTWORK already carries its own SHOP NOW and its own caption, and the green pill we drew on top of them covered the words 'Cocoa Dust' in 'Releasing soon: Cocoa Dust & Golden Hour' at 1440 and at 390. Live has no overlaid CTA on its hero either (measured 2026-08-25: no positioned text element over the hero region). The whole slide is already a link. The carousel still supports a cta if artwork ever lacks one."
+    },
+    {
+      "alt": "Price Drop",
+      "href": "/best-sellers",
+      "desktop": "/brand/hero-pricedrop-desktop.webp",
+      "mobile": "/brand/hero-pricedrop-mobile.webp"
+    }
+  ],
+  "hero_autoplay_ms": 6000,
+  "_ownership": "Three lanes write this file: yd-store (chrome: announcement, logo, nav, hero, social, promos, utility), yd-pdp (backorder), yd-cat (nav notes). It was created independently on three branches at the same path with NO overlapping keys, so git presents an add/add conflict and 'take mine' silently deletes another lane's keys. THE RESOLUTION IS THE UNION. Namespace new keys by owner; never rewrite another lane's key.",
+  "sale_callouts": {
+    "_note": "The coloured line the live product page shows above the price on warehouse-sale products \u2014 '$20 Bottoms', '$10 Tops'. Measured across 45 live product pages: the mapping is exact and unanimous, $10.00 -> '$10 Tops' (10 of 10) and $20.00 -> '$20 Bottoms' (20 of 20), with no callout at any of the eight other sale prices. So it is keyed on the sale price alone and needs no category \u2014 which also avoids config/promotions.yd.json's warning that sale membership must never be derived from the warehouse-sale category. WHEN THE SALE CHANGES, EDIT THIS: an unmatched price simply shows nothing, so a stale entry is a wrong claim, not a blank.",
+    "_owner": "Sale tiers are yd-promo's business rule. This is the PDP's copy of the label. If yd-promo ever publishes tiers as data, source them from there and delete this.",
+    "tiers": [
+      {
+        "amount": 10.0,
+        "label": "$10 Tops"
+      },
+      {
+        "amount": 20.0,
+        "label": "$20 Bottoms"
+      }
+    ]
+  },
+  "analytics": {
+    "_why": "Matched to live, read from its page source and its GTM container on 2026-08-26. DEFAULTED TO LIVE'S OWN IDS so launch is not blocked on a decision: reusing the live container and property is the continuity answer and the safer default -- day-one traffic lands somewhere real rather than nowhere. If Jeff wants a clean before/after instead, replace the three values below; that is the whole change. Nothing fires until SITE_IS_PUBLIC, so the gated preview cannot pollute either property.",
+    "_live_values_for_reference": {
+      "gtm_container_id": "GTM-THH3C3W",
+      "klaviyo_company_id": "bViWbF",
+      "tiktok_pixel_id": "D3RAJRRC77U6ID07LMBG",
+      "_ga4_inside_the_container": "G-70YFKZMYB4",
+      "_google_ads_inline_on_live": "AW-970394304",
+      "_note": "GA4 and Meta fire from INSIDE the GTM container -- do not add them separately or every pageview and conversion is counted twice."
+    },
+    "gtm_container_id": "GTM-THH3C3W",
+    "klaviyo_company_id": "bViWbF",
+    "tiktok_pixel_id": "D3RAJRRC77U6ID07LMBG"
+  }
+}

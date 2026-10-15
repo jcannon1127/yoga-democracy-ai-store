@@ -1,0 +1,28 @@
+{
+  "_why": "What a customer is told when we genuinely cannot find their order, and how they reach a human. Data, not components (tenancy rule 5) — the merchandising team edits the wording here without a code change, the same way the sale banner lives in site-chrome.json.",
+
+  "_the_problem_this_exists_for": "Of 120,783 migrated orders, 8,984 carry no email address anywhere in the Salesforce export and 9,662 have no postal code. Those orders cannot be found by the guest lookup and cannot be attached to an account, however correctly the customer fills the form in. It is a gap in eleven-year-old data, not a bug, and it is permanent. Roughly 1 in 9 orders.",
+
+  "_the_rule_that_shapes_the_copy": "The page says the SAME thing to everyone. A customer who mistyped and a customer whose order is unfindable see identical words, because telling them apart would tell a stranger which order numbers exist — YD's are sequential. The resolution is not a different message for the unfindable; it is that EVERYONE is always offered a route to a human. Do not add copy here that only makes sense for one of those two people.",
+
+  "_status": "PLACEHOLDER WORDING, awaiting the merchandising team. The shape is real and wired up; the sentences are mine and should be replaced. Nothing else has to change when they are.",
+
+  "contact_email": "cs@yogademocracy.com",
+
+  "lookup_failed": {
+    "heading": "Still cannot find it?",
+    "body": "Some older orders are missing details we need to look them up here. Send us what you have and we will find it for you.",
+    "cta": "Email us about this order"
+  },
+
+  "history_incomplete": {
+    "heading": "Not seeing an order you expected?",
+    "body": "Some orders placed on our previous website are missing the details we need to link them to your account. We can still look them up for you."
+  },
+
+  "email_template": {
+    "subject": "Help finding an order",
+    "intro": "Hello — I am trying to find an order and the website could not match it.",
+    "ask": "Anything else you remember helps: roughly when you ordered, what was in it, and the name it was shipped to."
+  }
+}

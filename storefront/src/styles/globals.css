@@ -1,0 +1,381 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/**
+ * YD design tokens — the single source for brand colour and type.
+ *
+ * Values are lifted from the LIVE site's own stylesheet, not eyeballed from screenshots.
+ * Three agents build pages against these; hardcoding #5e7461 in a component is how it drifts.
+ * Tailwind exposes them as `bg-yd-primary`, `font-sans` etc. — see tailwind.config.js.
+ *
+ * Not included: Druk-Wide-Medium, used on the live site for one banner heading. It is a
+ * Commercial Type font and YD's licence is unconfirmed, so it is deliberately absent rather
+ * than copied off the live site and served from a new domain. Ask Jeff before using it.
+ */
+:root {
+  --yd-primary: #5e7461;          /* announcement bar, primary buttons */
+  --yd-deep-moss-green: #455851;
+  --yd-pine-green: #324140;
+  --yd-forest-green: #488851;
+  --yd-green: #008827;
+  --yd-emerald-green: #34a853;
+
+  /* Live's text ink. Already used literally by the product-page dropdowns below; named here
+     because the category tiles need it too. */
+  --yd-ink: #202223;
+  --yd-ink-faded: rgba(32, 34, 35, 0.5);   /* struck-through original price, category tiles */
+  --yd-ink-soft: rgba(32, 34, 35, 0.75); /* totals rows, cart AND checkout summary on live */
+  --yd-ink-muted: #999999;                 /* struck-through original price, CART -- live's
+                                              cart uses a flat grey, not the tiles' alpha */
+
+  /* Live .btn: padding .9375rem 1.5625rem, border-radius 1.5625rem — a pill, not a rectangle */
+  --yd-btn-radius: 1.5625rem;
+  --yd-btn-padding-y: 0.9375rem;
+  --yd-btn-padding-x: 1.5625rem;
+
+  /* Repoint Medusa UI's own button tokens at the brand colour.
+   *
+   * The starter's primary button renders near-black (--button-inverted: rgb(39,39,42)); the
+   * live site's is solid #5e7461 with white text. Overriding the TOKEN rather than patching
+   * each <Button> means every agent's buttons change together and nobody has to know the hex
+   * — which is the point of putting these in one place. */
+  --button-inverted: var(--yd-primary);
+  --button-inverted-hover: var(--yd-deep-moss-green);
+  --button-inverted-pressed: var(--yd-pine-green);
+}
+
+@layer components {
+  /* Primary buttons are pills on the live site, and Add to Cart is the most-looked-at
+   * control on a product page. Medusa's Button hardcodes `rounded-md`, so the radius has to
+   * be forced rather than themed. */
+  button.bg-ui-button-inverted,
+  a.bg-ui-button-inverted {
+    border-radius: var(--yd-btn-radius);
+  }
+}
+
+/* Poppins, self-hosted to match the live site (which self-hosts woff2) and to avoid a
+   third-party request on every page. Poppins is Open Font License. */
+@font-face {
+  font-family: "Druk-Wide";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/druk-wide-medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/poppins-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/poppins-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/poppins-700.woff2") format("woff2");
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label {
+    @apply -translate-y-2 text-xsmall-regular;
+  }
+
+  input:focus ~ label {
+    @apply left-0;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 1px solid #212121;
+    -webkit-text-fill-color: #212121;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+@layer components {
+  .content-container {
+    @apply max-w-[1440px] w-full mx-auto px-4 min-[768px]:px-6;
+  }
+
+  .contrast-btn {
+    @apply px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition-colors duration-200 ease-in;
+  }
+
+  .text-xsmall-regular {
+    @apply text-[10px] leading-4 font-normal;
+  }
+
+  .text-small-regular {
+    @apply text-xs leading-5 font-normal;
+  }
+
+  .text-small-semi {
+    @apply text-xs leading-5 font-semibold;
+  }
+
+  .text-base-regular {
+    @apply text-sm leading-6 font-normal;
+  }
+
+  .text-base-semi {
+    @apply text-sm leading-6 font-semibold;
+  }
+
+  .text-large-regular {
+    @apply text-base leading-6 font-normal;
+  }
+
+  .text-large-semi {
+    @apply text-base leading-6 font-semibold;
+  }
+
+  .text-xl-regular {
+    @apply text-2xl leading-[36px] font-normal;
+  }
+
+  .text-xl-semi {
+    @apply text-2xl leading-[36px] font-semibold;
+  }
+
+  .text-2xl-regular {
+    @apply text-[30px] leading-[48px] font-normal;
+  }
+
+  .text-2xl-semi {
+    @apply text-[30px] leading-[48px] font-semibold;
+  }
+
+  .text-3xl-regular {
+    @apply text-[32px] leading-[44px] font-normal;
+  }
+
+  .text-3xl-semi {
+    @apply text-[32px] leading-[44px] font-semibold;
+  }
+}
+
+/**
+ * A disabled control must still be READABLE.
+ *
+ * Medusa fades a disabled button's background, border and text almost to white. Add to Cart
+ * is disabled until a size is chosen, so it is the state MOST visitors meet first, and on a
+ * phone it reads as a broken page rather than "choose a size". The live site keeps a dark
+ * border and dark text.
+ *
+ * Deliberately outside @layer and with a specificity bump. Medusa's styling comes from
+ * Tailwind `disabled:` UTILITIES (class + pseudo-class = 0,2,0), and utilities outrank the
+ * components layer — the first version of this rule lived in @layer components, changed
+ * nothing, and looked correct in the stylesheet. `button[disabled][class]` is 0,2,1, which
+ * wins honestly rather than with !important.
+ *
+ * Verified by screenshot and by sampling the label's pixel darkness, not by reading the CSS.
+ */
+button[disabled][class],
+button[aria-disabled="true"][class] {
+  background-color: #fff;
+  border-color: rgba(32, 34, 35, 0.55);
+  color: rgba(32, 34, 35, 0.85);
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+/*
+ * Poppins everywhere, including nav and buttons.
+ *
+ * @medusajs/ui-preset bakes the LITERAL string "Inter, ui-sans-serif, system-ui, …" into every
+ * one of its typography utilities (txt-compact-small, text-small-regular, …) rather than
+ * referencing theme(fontFamily.sans). So the Poppins override in tailwind.config.js — which is
+ * correct, and does reach body and headings — cannot touch them. The result was a site whose
+ * body copy was Poppins and whose nav and buttons were Inter, which reads as "close but not
+ * quite the same site" without being nameable. The live site computes Poppins on nav, buttons
+ * and body alike; measured, not read off a stylesheet.
+ *
+ * `inherit` rather than a repeated stack: these then follow whatever body is set to, so there
+ * is one definition of the site's typeface and not two that can drift apart.
+ *
+ * Unlayered on purpose — unlayered rules beat @layer utilities, which is what these are.
+ */
+[class*="txt-"]:not(.yd-category-heading),
+[class*="text-"][class*="-regular"]:not(.yd-category-heading),
+[class*="text-"][class*="-semi"]:not(.yd-category-heading),
+[class*="text-"][class*="-plus"]:not(.yd-category-heading),
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/*
+ * Category page headings, matching the live site exactly.
+ *
+ * Live computes: "Druk-Wide", Helvetica, Arial, sans-serif / weight 400 / uppercase /
+ * letter-spacing 0.345px. Measured off the running page rather than copied from a spec.
+ *
+ * Deliberately scoped to browse headings. Live uses Poppins for the home h1, the product
+ * title and content headings -- serving Druk Wide everywhere would replace one parity gap
+ * with a larger one.
+ */
+.yd-category-heading {
+  font-family: "Druk-Wide", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.345px;
+}
+
+/*
+ * The product page's dropdowns — size, length, quantity.
+ *
+ * This exists because of a bug worth naming. Both selects styled their arrow with
+ * `bg-[url('data:image/svg+xml;utf8,<svg xmlns=... ')]`. A Tailwind arbitrary value cannot
+ * contain SPACES: the browser splits `class` on whitespace, so that one class shattered into
+ * `bg-[url('data:image/svg+xml;utf8,<svg`, `xmlns=%22...%22`, `viewBox=%220`, and so on. The
+ * arrow never applied — and tailwind-merge, having already seen a `bg-` class, dropped the
+ * `bg-white` in front of it. Measured result on every product page: `background-image: none`
+ * with `appearance: none`, i.e. a dropdown with NO arrow, on a grey fill where live is white.
+ * It looked right in the source and was wrong in the browser, which is why this was found by
+ * reading computed style off the running page rather than by reading the component.
+ *
+ * Values are the live page's own, measured at 1440 and at 390 (they do not change with
+ * width): 16px text, 52px tall, white, 1px #c7c8c8, text #202223.
+ *
+ * Unlayered, and the utilities it replaces were deleted from the components rather than left
+ * to fight it — a rule that needs !important to win is a rule that will be undone later.
+ */
+.yd-select {
+  width: 100%;
+  height: 52px;
+  padding: 0 2.25rem 0 0.75rem;
+  font-size: 16px;
+  line-height: normal;
+  color: #202223;
+  background-color: #fff;
+  border: 1px solid #c7c8c8;
+  border-radius: 0.25rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23202223'><path d='M5.5 7.5L10 12l4.5-4.5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 1.25rem;
+}
+
+.yd-select:focus {
+  outline: none;
+  border-color: #202223;
+}
+
+.yd-select:disabled {
+  color: rgba(32, 34, 35, 0.5);
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+/*
+ * The compact variant — Complete-the-Set's size picker, 40px rather than the buy box's 52.
+ *
+ * Added because the SAME defect yd-pdp found on the buy box was still live four selects
+ * further down the product page: `appearance-none` with no background-image, i.e. a dropdown
+ * with no arrow. Different component, different cause (nobody ever added an arrow, rather
+ * than one shattering on a space), identical thing on screen. Measured on the deployed build:
+ * `background-image: none` on all four.
+ */
+.yd-select--compact {
+  height: 2.5rem;
+  font-size: 13px;
+  background-size: 1rem;
+  background-position: right 0.5rem center;
+  padding-right: 1.75rem;
+}
+
+/*
+ * The buy box's supporting text: the "Select Size" / "Quantity" labels and the Availability
+ * row. Live sets all of them 16px/24px at rgba(32,34,35,.75) and does not change them with
+ * width; ours inherited Medusa's 14px/20px in near-black, which read as a denser, darker
+ * column than the live page beside it.
+ */
+.yd-buybox-label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(32, 34, 35, 0.75);
+}
+
+/*
+ * Product title. Live: 28px/1.2 with 0.015em tracking on desktop, 22px on phones, switching
+ * at 769px — its own breakpoint, the same one the breadcrumb uses (live runs a customised
+ * Bootstrap: 544/769/992/1200/1440). Ours was a flat 32px/40px at every width, which on a
+ * 390px phone is 45% larger than the page it is copying.
+ */
+.yd-product-title {
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  font-weight: 400;
+  color: #202223;
+}
+
+@media (min-width: 769px) {
+  .yd-product-title {
+    font-size: 28px;
+  }
+}
+
+/*
+ * The product page's Add to Cart, while no size has been chosen yet.
+ *
+ * Live disables the button before a selection — and styles the disabled state exactly like
+ * the enabled one: text #212529, border solid #000, white fill. Measured, because the
+ * site-wide disabled rule above (which fades the border to 55% and the text to 85%) is a
+ * reasonable default for the rest of the site but is not what this button does on live.
+ *
+ * `button.yd-atc[disabled][class]` is 0,3,1 — one class more specific than the site-wide
+ * rule it needs to beat, and scoped to this button, so no other disabled button on the site
+ * changes because of it.
+ */
+button.yd-atc[disabled][class],
+button.yd-atc[aria-disabled="true"][class] {
+  color: rgb(33, 37, 41);
+  border-color: #000;
+  background-color: #fff;
+}

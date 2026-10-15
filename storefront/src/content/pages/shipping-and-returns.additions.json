@@ -1,0 +1,16 @@
+{
+  "_why": "US-only corrections. The live copy assumes YD ships to Canada and internationally; Jeff ruled US-only for launch on 2026-08-22 (138 of 12,216 deliveries in the last 365 days went outside the US, Canada largest at 0.34%). Left as narrow factual edits rather than rewritten policy — the wording below is a stopgap and POLICY COPY STILL NEEDS A HUMAN PASS before launch.",
+  "needs_human_review": true,
+  "replacements": [
+    {
+      "find": "We do not ship to P.O. boxes outside of Canada and the US.",
+      "replace": "We ship within the United States only, and we do not ship to P.O. boxes outside the US.",
+      "_why": "US-only for launch"
+    }
+  ],
+  "drop_blocks": [
+    { "contains": "International Shipping", "_why": "section heading for a service not offered at launch" },
+    { "contains": "International and Canadian Customers", "_why": "returns instructions for customers the site cannot sell to" }
+  ],
+  "blocks": []
+}

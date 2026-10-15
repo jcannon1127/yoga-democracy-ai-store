@@ -1,0 +1,59 @@
+{
+  "columns": [
+    {
+      "title": "Customer Service",
+      "links": [
+        {
+          "label": "Shipping and Returns",
+          "href": "/pages/shipping-and-returns"
+        },
+        {
+          "label": "Initiate a Return/Exchange",
+          "href": "/pages/returns"
+        },
+        {
+          "label": "Free Hemming",
+          "href": "/pages/free-hemming"
+        },
+        {
+          "label": "Size Chart",
+          "href": "/pages/size-chart"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "/pages/privacy-policy"
+        }
+      ]
+    },
+    {
+      "title": "Yoga Democracy",
+      "links": [
+        {
+          "label": "About Us",
+          "href": "/pages/about-us"
+        },
+        {
+          "label": "Indianapolis Store",
+          "href": "/pages/indianapolis-store"
+        },
+        {
+          "label": "YD Rewards Points",
+          "href": "/pages/yd-rewards"
+        },
+        {
+          "label": "Become an Affiliate",
+          "href": "/pages/become-an-affiliate"
+        },
+        {
+          "label": "Wholesale",
+          "href": "/pages/wholesale"
+        },
+        {
+          "label": "Closet Clean Out",
+          "href": "https://yogademocracy.thredup.com",
+          "external": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "medusa-payment-cybersource",
+  "version": "1.1.1-yd.1",
+  "description": "CyberSource payment provider for Medusa.js v2 with Flex Microform (PCI DSS SAQ-A)",
+  "author": {
+    "name": "Geovanny Gil",
+    "email": "geovannygr2018@gmail.com",
+    "url": "https://github.com/GeovannyGil"
+  },
+  "license": "MIT",
+  "keywords": [
+    "medusa",
+    "medusa-plugin",
+    "medusa-plugin-integration",
+    "medusa-plugin-payment",
+    "medusa-v2",
+    "medusajs",
+    "payment",
+    "cybersource",
+    "flex-microform",
+    "pci-dss",
+    "ecommerce"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eleven-Estudio/medusa-payment-cybersource.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eleven-Estudio/medusa-payment-cybersource/issues"
+  },
+  "homepage": "https://github.com/Eleven-Estudio/medusa-payment-cybersource#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "./.medusa/server/src/index.js",
+  "types": "./.medusa/server/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./.medusa/server/src/index.js",
+      "types": "./.medusa/server/src/index.d.ts"
+    },
+    "./admin": {
+      "import": "./.medusa/server/src/admin/index.mjs",
+      "default": "./.medusa/server/src/admin/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    ".medusa/server"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc && vite build --config vite.admin.config.mts",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf .medusa dist tsconfig.tsbuildinfo"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": ">=2.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cybersource-rest-client": "^0.0.61"
+  },
+  "devDependencies": {
+    "@medusajs/admin-sdk": "2.19.0",
+    "@medusajs/admin-vite-plugin": "2.19.0",
+    "@medusajs/cli": "2.19.0",
+    "@medusajs/framework": "2.19.0",
+    "@medusajs/icons": "2.19.0",
+    "@medusajs/ui": "^4.2.1",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^5.1.4",
+    "react": "^18.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  },
+  "private": true
+}

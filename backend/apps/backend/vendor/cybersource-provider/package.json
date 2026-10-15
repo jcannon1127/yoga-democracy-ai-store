@@ -1,0 +1,59 @@
+{
+  "name": "medusa-payment-cybersource",
+  "version": "1.1.1-yd.1",
+  "description": "CyberSource payment provider for Medusa.js v2 with Flex Microform (PCI DSS SAQ-A)",
+  "author": {
+    "name": "Geovanny Gil",
+    "email": "geovannygr2018@gmail.com",
+    "url": "https://github.com/GeovannyGil"
+  },
+  "license": "MIT",
+  "keywords": [
+    "medusa",
+    "medusa-plugin",
+    "medusa-plugin-integration",
+    "medusa-plugin-payment",
+    "medusa-v2",
+    "medusajs",
+    "payment",
+    "cybersource",
+    "flex-microform",
+    "pci-dss",
+    "ecommerce"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eleven-Estudio/medusa-payment-cybersource.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eleven-Estudio/medusa-payment-cybersource/issues"
+  },
+  "homepage": "https://github.com/Eleven-Estudio/medusa-payment-cybersource#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "./.medusa/server/src/index.js",
+  "types": "./.medusa/server/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./.medusa/server/src/index.js",
+      "types": "./.medusa/server/src/index.d.ts"
+    },
+    "./admin": {
+      "import": "./.medusa/server/src/admin/index.mjs",
+      "default": "./.medusa/server/src/admin/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    ".medusa/server"
+  ],
+  "peerDependencies": {
+    "@medusajs/framework": ">=2.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cybersource-rest-client": "^0.0.61"
+  },
+  "private": true
+}

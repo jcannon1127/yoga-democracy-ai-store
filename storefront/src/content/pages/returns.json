@@ -1,0 +1,32 @@
+{
+  "slug": "returns",
+  "title": "Initiate a Return or Exchange",
+  "description": "Eco-Friendly activewear for yoga, run and leisure. Leggings, yoga shorts and tops. Highest rated for hot yoga. Leading brand in recycled, eco-friendly women's activewear. Sustainable workout clothes made from recycled plastic. Sizes 2XS-3XL. Free Shipping + Returns",
+  "source_url": "https://www.yogademocracy.com/Initiate-Return-Exchange.html",
+  "blocks": [
+    {
+      "type": "text",
+      "text": "We are currently undergoing a transition here at Yoga Democracy including updates to how we process returns + help with any customer related questions! While we know change can be a little difficult, we hope to provide a much easier opportunity to connect and to ensure you have the best experience possible. While we finalize our updates, please reach out to cs@yogademocracy.com as our customer service team will be more than happy to help out! FOR RETURNS/EXCHANGE: Please specify within your email the following to ensure a quick and seamless response."
+    },
+    {
+      "type": "list-item",
+      "text": "Order #:"
+    },
+    {
+      "type": "list-item",
+      "text": "Full Name:"
+    },
+    {
+      "type": "list-item",
+      "text": "Email used to place your order:"
+    },
+    {
+      "type": "list-item",
+      "text": "Looking For: (Return, Exchange, Store Credit)"
+    },
+    {
+      "type": "text",
+      "text": "Thank you so much for allowing us to be part of your journey with you and we look forward to connecting soon!"
+    }
+  ]
+}

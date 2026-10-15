@@ -1,0 +1,10 @@
+{
+  "_why": "The live page is a client-rendered Yotpo widget, so there is nothing in its server HTML to extract. Yotpo stays through launch; $10,891 was redeemed through it in August alone, so a blank page is not acceptable. The widget is embedded rather than described.",
+  "blocks": [
+    {
+      "type": "widget",
+      "provider": "yotpo-loyalty",
+      "instance_id": "1239683"
+    }
+  ]
+}
